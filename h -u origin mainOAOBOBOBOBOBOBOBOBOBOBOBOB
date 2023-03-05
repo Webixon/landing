@@ -1,0 +1,35 @@
+[33mcommit ec11f847be4d333dc989bb211b6e808143c35fb6[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Tomek Sośniewski <sosna86@gmail.com>
+Date:   Sun Mar 5 18:51:53 2023 +0100
+
+    com 1
+
+[33mcommit aea07d8c60414b9da4cae3f8674987412a4d669c[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Tomek Sośniewski <sosna86@gmail.com>
+Date:   Sun Mar 5 18:40:26 2023 +0100
+
+    aa
+
+[33mcommit 77b05e555429e583ac5328141e6242be101fe6dd[m
+Author: Tomek Sośniewski <sosna86@gmail.com>
+Date:   Sun Mar 5 18:30:29 2023 +0100
+
+    com3
+
+[33mcommit 789e77bd2dedf8e0cf1b5ac848092f77d5cf75da[m
+Author: Tomek Sośniewski <sosna86@gmail.com>
+Date:   Sun Mar 5 18:22:49 2023 +0100
+
+    com2
+
+[33mcommit 50376e4e8d1fd16589fb274e3040c9165af31edf[m
+Author: Tomek Sośniewski <sosna86@gmail.com>
+Date:   Sun Mar 5 18:14:33 2023 +0100
+
+    first
+
+[33mcommit 064dd829d5eb24ce2a97e0896514b427ba17a92d[m
+Author: Tomek Sośniewski <sosna86@gmail.com>
+Date:   Mon Feb 20 19:01:49 2023 +0100
+
+    Initialize project using Create React App
