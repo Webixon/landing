@@ -1,26 +1,19 @@
 import React, {Component} from "react";
 
-class ButtonApp extends Component {
-    state = {
-        active:false,
-
-    }    
-    handleClick = () => {
-        this.setState({
-            active: !this.state.active
-        })
-      
-    }
-
-    render(){
-        return(
-            <>
-                <button onClick={this.handleClick} style={this.state.active?{backgroundColor:"black", color:"white"}:{backgroundColor:"white", color:"black"}}>{this.state.active?"Włącz":"Wyłącz"}</button>
-            
-            </>
-        )
-    }
+const ButtonApp = () => {
+    const [item, setText] = React.useState('')    
     
+    function handleClick () {
+        let letter = 'a';
+        setText(item + letter)
+    }
+
+    return(
+        <>
+            <button onClick={handleClick}>Dodaj litere A</button>
+            <p>{item}</p>
+        </>
+    )
 }
 
 export default ButtonApp;
