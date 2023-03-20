@@ -4,11 +4,13 @@ import Header from './Header';
 import Navigation from './Navigation';
 import Page from './Page';
 import Footer from './Footer';
+import { AppContext, defaultObject } from '../pages/AppContext';
 
 class App extends Component {
   render(){ 
   return (
     <div className="app">
+      <AppContext.Provider value={defaultObject}>
       <header>
         {<Header/>}
       </header>
@@ -23,7 +25,7 @@ class App extends Component {
       <footer>
         {<Footer/>}  
       </footer>       
-      
+      </AppContext.Provider>
    
     </div>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import Bike from "./Bike";
+import { AppContext } from "./AppContext";
 
 const list = [
     {name:"Bmx",
@@ -12,15 +13,33 @@ const list = [
 const BikeList = () => {
 
 
-    const bikeList = list.map(bike => <Bike key={bike} name={bike.name} pic={bike.pic}/>)
+    const bikeList = list.map(bike => <Bike key={bike.name} name={bike.name} pic={bike.pic}/>)
   console.log(bikeList)
     return (     
     <>
     <h1>
         {bikeList}
     </h1>
+    <AppContext.Consumer>
+       {
+        (props) => {
+            return(
+                <>
+                {console.log(props)}
+                    <h1></h1>
+                </>
+            )
+        }
+
+
+
+       }
+
+
+    </AppContext.Consumer>
     
-    </> );
+    </> 
+    );
 }
  
 export default BikeList;
