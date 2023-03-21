@@ -1,7 +1,10 @@
-import React, { createContext} from 'react';
+import React, {createContext} from 'react'
 
-export const defaultObject = {
-    color: "red"
-   
+export  const defaultObject = {
+    isLogged: false,
+    changeLog: ()=>{}
+
 }
-export const AppContext = createContext()
+
+
+export const AppContext = createContext() 

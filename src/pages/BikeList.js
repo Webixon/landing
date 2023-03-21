@@ -20,23 +20,7 @@ const BikeList = () => {
     <h1>
         {bikeList}
     </h1>
-    <AppContext.Consumer>
-       {
-        (props) => {
-            return(
-                <>
-                {console.log(props)}
-                    <h1></h1>
-                </>
-            )
-        }
 
-
-
-       }
-
-
-    </AppContext.Consumer>
     
     </> 
     );

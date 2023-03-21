@@ -8,7 +8,7 @@ import { AppContext, defaultObject } from "./AppContext";
 const products = ["car", "bike", "motorcycle"]
 
 const ProductListPage = () => {
-    const color = useContext(defaultObject)
+    const color = useContext(AppContext)
     const list = products.map(product => (
         <li key={product}>
             <Link to={`/products/${product}`}>{product}</Link>
@@ -21,7 +21,7 @@ const ProductListPage = () => {
     <>  
    
         <div className="products">
-            <h2 style ={{color:color}}>Lista produktów</h2>
+            <h2 style ={{color:color.color}}>Lista produktów</h2>
             <ul >
             {list}
             </ul>
