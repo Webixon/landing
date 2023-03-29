@@ -15,5 +15,16 @@ body{
     display: flex;
     width: 80vw;
     margin: 0 auto;
-    grid-template-rows: auto;
+}
+
+@media only screen and (max-width:400px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        
+        width: 99vw;
+    }
+    body{
+        width: 100vw;
+    }
 }

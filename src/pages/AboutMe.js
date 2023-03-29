@@ -4,7 +4,7 @@ import '../styles/AboutMe.css'
 const AboutMe = () => {
     return(
         <>
-        dupa
+        Test text
         </>
     )
 }

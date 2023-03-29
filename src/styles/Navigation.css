@@ -16,6 +16,7 @@
 
 .navElement:not(:first-child){
     margin-top: 20px;
+    
 }
 .navElement{
     transition: transform .3s ease-in-out;
@@ -30,5 +31,27 @@
 .active{
     transform: translateX(15px);    
 }
-
+@media only screen and (max-width:400px){
+    .nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 99vw;
+        height: 10vh;
+    }
+    .navElement:not(:first-child){
+        margin-top: 0px;
+        
+    }
+    .navElement{
+        padding: 0 10px;
+    }
+    .active{
+        transform: translateX(0px);    
+    }
+    .navElement:hover{
+        transform: translateX(0px);
+    }
+}
 
