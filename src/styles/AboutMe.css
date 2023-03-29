@@ -1,0 +1,10 @@
+.mainSection{
+    width: 100%;
+    margin-top: 20px;
+    background-color: var(--navigationBackground);
+    margin-left: 40px;
+    height:50vh;
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
+}
