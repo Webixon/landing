@@ -14,7 +14,7 @@ const Contact = () => {
     }
     const handlerSubmit = (e) => {
         e.preventDefault()
-        console.log({inputs})
+        alert(`Pan ${inputs.name} z adresem email ${inputs.email} napisał wiadomość następującej treści ${inputs.msg}`)
         setInputs(values => ({}))
     }
     return (
