@@ -8,7 +8,7 @@
     -moz-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:420px){
     .mainSection{
         margin: 0;
         height:auto;

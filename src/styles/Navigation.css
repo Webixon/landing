@@ -31,7 +31,7 @@
 .active{
     transform: translateX(15px);    
 }
-@media only screen and (max-width:400px){
+@media only screen and (max-width:420px){
     .nav{
         display:flex;
         flex-direction: row;
