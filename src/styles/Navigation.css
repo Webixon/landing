@@ -48,7 +48,10 @@
         padding: 0 10px;
     }
     .active{
-        transform: translateX(0px);    
+        transform: translateX(0px); 
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;   
+        transition: all .2s ease-in-out;
     }
     .navElement:hover{
         transform: translateX(0px);
