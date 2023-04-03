@@ -10,7 +10,7 @@
     font-size: 44px;
 }
 form{
-    margin: 20px 0 0 0
+    margin: 40px 0 0 0
 }
 label, input{
     margin-bottom:20px ;
@@ -35,9 +35,16 @@ textarea{
     font-weight: bold;
     font-size: 18px;
     margin-left: 5em;
+    border:none;
 }
 @media only screen and (max-width:420px){
     .contactTitle{
         font-size: 24px;
+    }
+    form{
+        margin-top: 20px; 
+    }
+    #submitBtn{
+        margin-top: 15px;
     }
 }
