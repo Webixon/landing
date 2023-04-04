@@ -12,8 +12,8 @@ const Projects = () => {
         {
             title:'ToDo List',
             img:toDoImg,
-            description: '',
-            usedTechnologies:[technologies.css.name, technologies.html.name]
+            description: 'Made a simple ToDoList which shows beginning of my knowledge of JavaScript',
+            usedTechnologies:[technologies.html.icon, technologies.css.icon,technologies.js.icon]
         },
         {
             title:'Tytuł 11',

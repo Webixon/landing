@@ -1,10 +1,10 @@
 import React from 'react';
 
-import '../styles/ProjectBox.css'
+import '../styles/Project.css'
 
 const Project = (props) => {
 
-    const {title, img, usedTechnologies} = props.project
+    const {title, img, usedTechnologies,description} = props.project
     // console.log(title, usedTechnologies)
     return(
         <>
@@ -12,7 +12,8 @@ const Project = (props) => {
             <div className='projectBox'>
                 <span className='projectTitle'>{title}</span>
                 <img className="img" src={img} alt='toDoImage'/>
-                {usedTechnologies} {/*tu należy stworzyć boxy z odpowiednimi projektami*/}
+                <span className='projectDescription'>{description}</span>
+                <span className='projectTechnologiesIcon'>{usedTechnologies}</span> {/*tu należy stworzyć boxy z odpowiednimi projektami*/}
             </div>
         </div>
         </>

@@ -15,6 +15,6 @@
 @media only screen and (max-width:420px){
     .mainSection{
         width: 90vw;
-        margin:20px auto;
+        margin:20px 10px;
     }
 }
