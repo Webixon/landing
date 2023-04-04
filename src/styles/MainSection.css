@@ -10,6 +10,7 @@
     -webkit-box-shadow: var(--box-shadow);
     -moz-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
+    color:white;
 
 }
 @media only screen and (max-width:420px){
