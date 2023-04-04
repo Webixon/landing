@@ -6,7 +6,6 @@ import '../styles/MainSection.css'
 
 import AboutMe from '../pages/AboutMe'
 import Projects from '../pages/Projects'
-import Contact from '../pages/Contact'
 import Contact1 from '../pages/Contact1'
 
 const MainSection = () => {
