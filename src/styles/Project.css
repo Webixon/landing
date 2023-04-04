@@ -1,3 +1,6 @@
+.projectLink{
+    all:unset;
+}
 .projectArea{
     display: inline-block;
     max-width: 100%;

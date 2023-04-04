@@ -11,6 +11,7 @@ const Projects = () => {
     const projects =[
         {
             title:'ToDo List',
+            href:'#',
             img:toDoImg,
             description: 'Made a simple ToDoList which shows beginning of my knowledge of JavaScript',
             usedTechnologies:[technologies.html.icon, technologies.css.icon,technologies.js.icon]
