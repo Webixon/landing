@@ -1,4 +1,7 @@
-import { technologies } from "./Technologies"
+//This component allow to instantly create new "tile" with project on site, with instant access to technologies//
+
+
+import { technologies } from "./InputTechnologies"
 
 import toDoImg from'../images/proj1.jpg'
 

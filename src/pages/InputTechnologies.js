@@ -1,3 +1,5 @@
+// This component allow to add next learned features/languages//
+
 import { FaReact } from "react-icons/fa";
 import {AiOutlineHtml5} from 'react-icons/ai'
 import {TbBrandCss3} from 'react-icons/tb'
