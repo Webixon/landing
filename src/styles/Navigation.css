@@ -6,7 +6,6 @@
     width: 12vw;
     min-width: 160px;
     height:50vh;
-    margin: 20px auto;
     padding: 5px 7px;
     font-size: 24px;
     -webkit-box-shadow: var(--box-shadow);
@@ -37,8 +36,10 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 99vw;
+        margin: 20px auto 0px auto;
+        width: 90vw;
         height: 10vh;
+        min-height: 0vh;
     }
     .navElement:not(:first-child){
         margin-top: 0px;
