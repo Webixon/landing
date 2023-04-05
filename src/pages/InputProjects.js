@@ -30,5 +30,11 @@ export const projects = [
         title:'Tytuł 1111',
         img:'',
         usedTechnologies:[technologies.css.name, technologies.html.name, technologies.react.name]
+    },
+    {
+        id:5,
+        title:'Tytuł 11111211',
+        img:'',
+        usedTechnologies:[technologies.css.name, technologies.html.name, technologies.react.name]
     }
 ] 
