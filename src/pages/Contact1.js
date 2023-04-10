@@ -6,6 +6,9 @@ import ReCatptcha from "react-google-recaptcha"
 const Contact1 = () => {
   const REACT_APP_SITE_KEY = "6LcnV3QlAAAAAI4yNNAZGHLIstXdO9Xyqc9aQcYi"
   const form = useRef();
+
+  const [captchaClicked, setCaptchaClicked] = useState(false)
+
   
   const [emailSend, setEmailSend] = useState(false)
   const [inputs, setInputs] = useState({
@@ -78,7 +81,7 @@ const Contact1 = () => {
     e.preventDefault();
     const formValidation = validationCheck()
     console.log(formValidation)
-    if(formValidation.formCorrect){
+    if(formValidation.formCorrect && captchaClicked){
     emailjs.sendForm('service_vjms4p7', 'template_lunj1dt', form.current, 'xXPrA9aIKQNlNKQtF')
       .then((result) => {
           setEmailSend(!emailSend)
@@ -107,6 +110,9 @@ const Contact1 = () => {
   }
 };
 
+  const changeCaptcha = () => {
+    setCaptchaClicked(true)
+  }
   return (
     <div className='contactForm'>
     <span className='contactTitle'>Contact me through this form... </span>
@@ -123,7 +129,7 @@ const Contact1 = () => {
         <label htmlFor='msgInput'>Message: </label>
         <textarea name="msg" id='msgInput' rows="4" cols="33" onChange={inputHandler} value={inputs.msg} />{validation.msg && <span>{errorMsg.msgError}</span>}
         </div>
-        <ReCatptcha sitekey={REACT_APP_SITE_KEY} />
+        <ReCatptcha onChange={changeCaptcha} sitekey={REACT_APP_SITE_KEY} />
         <input type="submit" value="Send" id='submitBtn'  />
     </form>
     
