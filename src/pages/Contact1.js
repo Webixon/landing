@@ -1,8 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import '../styles/Contact.css'
 import emailjs from '@emailjs/browser';
+import ReCatptcha from "react-google-recaptcha"
 
 const Contact1 = () => {
+  const REACT_APP_SITE_KEY = "6LcnV3QlAAAAAI4yNNAZGHLIstXdO9Xyqc9aQcYi"
   const form = useRef();
   
   const [emailSend, setEmailSend] = useState(false)
@@ -106,12 +108,7 @@ const Contact1 = () => {
 };
 
   return (
-    
-
-
-
     <div className='contactForm'>
-
     <span className='contactTitle'>Contact me through this form... </span>
     <form ref={form} onSubmit={sendEmail}>
         <div>
@@ -126,6 +123,7 @@ const Contact1 = () => {
         <label htmlFor='msgInput'>Message: </label>
         <textarea name="msg" id='msgInput' rows="4" cols="33" onChange={inputHandler} value={inputs.msg} />{validation.msg && <span>{errorMsg.msgError}</span>}
         </div>
+        <ReCatptcha sitekey={REACT_APP_SITE_KEY} />
         <input type="submit" value="Send" id='submitBtn'  />
     </form>
     
